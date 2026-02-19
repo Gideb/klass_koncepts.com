@@ -42,8 +42,8 @@ const ServicesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-6 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaCode className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">
@@ -54,8 +54,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-6 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaLayerGroup className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">Web Design</h4>
@@ -64,8 +64,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-6 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <FaSearch className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">SEO Optimization</h4>
@@ -141,7 +141,7 @@ const ServicesSection = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
             <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer max-w-md text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaShieldAlt className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">CCTV Installation</h4>

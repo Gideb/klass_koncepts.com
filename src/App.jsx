@@ -8,6 +8,7 @@ import TestimonialSection from "./components/TestimonialSection";
 import ContactSection from "./components/ContactSection";
 import FooterSection from "./components/FooterSection";
 
+
 const App = () => {
   return (
     <div className="scroll-mt-30">
@@ -22,5 +23,6 @@ const App = () => {
     </div>
   );
 };
-
+// TODO: import fontawesome icons in why us 
+// TODO: add a video atomic plan background 
 export default App;

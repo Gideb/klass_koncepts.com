@@ -8,10 +8,10 @@ const ContactSection = () => {
   };
 
   return (
-    <div id="contact">
+    <div id="contact" className="scroll-mt-24">
       <section
         id="why-us"
-        className="relative px-6 sm:px-12 py-24 text-center bg-linear-to-b from-purple-50 via-white to-white
+        className=" relative px-6 sm:px-12 py-24 text-center bg-linear-to-b from-purple-50 via-white to-white
 "
       >
         {/* Background Glow */}

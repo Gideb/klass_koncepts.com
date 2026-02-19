@@ -1,10 +1,10 @@
-import React from "react";
 import profile from "../assets/images/profile.jpg";
+
 
 const AboutSection = () => {
   return (
-    <div id="about">
-      <section className="max-w-7xl mx-auto px-6 sm:px-12 py-24">
+    <div id="about" className="scroll-mt-24">
+      <section className="max-w-7xl mx-auto px-6 sm:px-12 py-24 ">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT – Profile Card */}
           <div className="bg-gray-100 rounded-3xl p-10 shadow border border-gray-300 text-center transition hover:shadow-lg">

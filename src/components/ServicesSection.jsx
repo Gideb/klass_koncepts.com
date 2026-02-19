@@ -9,14 +9,13 @@ import {
   FaShareAlt,
   FaShieldAlt,
   FaLightbulb,
-  FaGraduationCap,
   FaAward,
 } from "react-icons/fa";
 
 const ServicesSection = () => {
   return (
-    <div id="services">
-      <section className="max-w-7xl mx-auto min-h-screen px-6 sm:px-12 py-24 text-center mt-10">
+    <div id="services" className="scroll-mt-24">
+      <section className="max-w-7xl mx-auto min-h-screen px-6 sm:px-12 py-24 text-center mt-10 ">
         <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit mx-auto">
           <span className="w-2 h-2 bg-fuchsia-600 rounded-full animate-pulse"></span>
           What We Do
@@ -42,8 +41,8 @@ const ServicesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-purple-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaCode className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">
@@ -54,8 +53,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-purple-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaLayerGroup className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">Web Design</h4>
@@ -64,8 +63,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-purple-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <FaSearch className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">SEO Optimization</h4>
@@ -85,8 +84,8 @@ const ServicesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-amber-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-amber-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <FaPalette className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">Graphic Design</h4>
@@ -95,8 +94,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-amber-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-amber-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <FaVideo className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">Video Editing</h4>
@@ -105,8 +104,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-amber-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-amber-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaCamera className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">
@@ -117,8 +116,8 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-5 border-l-amber-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-200 border-l-4 border-l-amber-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-amber-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4">
                 <FaShareAlt className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">
@@ -140,8 +139,8 @@ const ServicesSection = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-1 gap-6">
-            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer max-w-md text-left border-2 border-gray-200 border-l-5 border-l-purple-600 transform transition duration-400 ease-in-out hover:translate-x-3">
-              <div className="bg-purple-100 text-amber-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
+            <div className="bg-white p-6 rounded-xl shadow hover:shadow-lg cursor-pointer max-w-md text-left border-2 border-gray-200 border-l-4 border-l-purple-600 transform transition duration-300 ease-in-out hover:translate-x-3">
+              <div className="bg-purple-100 text-purple-600 w-12 h-12 flex items-center justify-center rounded-lg mb-4 ">
                 <FaShieldAlt className="text-xl" />
               </div>
               <h4 className="font-semibold text-lg mb-2">CCTV Installation</h4>
@@ -175,7 +174,7 @@ const ServicesSection = () => {
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-6 mt-20">
-            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-400 ease-in-out hover:-translate-y-3">
+            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3">
               <div className="text-white bg-purple-600 w-15 h-15 flex items-center justify-center rounded-lg mb-4 mx-auto">
                 <FaAward className="text-3xl" />
               </div>
@@ -190,7 +189,7 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-400 ease-in-out hover:-translate-y-3">
+            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3">
               <div className="text-white bg-purple-600 w-15 h-15 flex items-center justify-center rounded-lg mb-4 mx-auto">
                 <FaLightbulb className="text-3xl" />
               </div>
@@ -204,7 +203,7 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-400 ease-in-out hover:-translate-y-3">
+            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3">
               <div className="text-white bg-purple-600 w-15 h-15 flex items-center justify-center rounded-lg mb-4 mx-auto">
                 <i className="fas fa-arrow-trend-up text-3xl"></i>
               </div>
@@ -218,7 +217,7 @@ const ServicesSection = () => {
               </p>
             </div>
 
-            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-400 ease-in-out hover:-translate-y-3">
+            <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-lg cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3">
               <div className="text-white bg-purple-600 w-15 h-15 flex items-center justify-center rounded-lg mb-4 mx-auto">
                 <i className="fas fa-bolt text-3xl"></i>
               </div>

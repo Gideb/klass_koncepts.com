@@ -2,8 +2,8 @@ import React from "react";
 import placeholder from "../assets/images/hero.png";
 const PortfolioSection = () => {
   return (
-    <div id="portfolio">
-      <section className="max-w-7xl mx-auto min-h-screen px-6 sm:px-12 py-24 text-center mt-10">
+    <div id="portfolio" className="scroll-mt-24">
+      <section className="max-w-7xl mx-auto min-h-screen px-6 sm:px-12 py-24 text-center mt-10 ">
         <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit mx-auto">
           <span className="w-2 h-2 bg-fuchsia-600 rounded-full animate-pulse"></span>
           Portfolio
@@ -22,10 +22,7 @@ const PortfolioSection = () => {
         </p>
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mt-20">
-
-          <div
-            className="group relative bg-white rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-300 overflow-hidden hover:-translate-y-2 transition-all duration-300"
-          >
+          <div className="group relative bg-white rounded-xl shadow hover:shadow-lg cursor-pointer text-left border-2 border-gray-300 overflow-hidden hover:-translate-y-2 transition-all duration-300">
             {/* Rolling Fuchsia Overlay */}
             <div className="absolute inset-0 bg-fuchsia-400/10 -translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-out z-0"></div>
 
@@ -195,7 +192,6 @@ const PortfolioSection = () => {
               </p>
             </div>
           </div>
-
         </div>
       </section>
     </div>

@@ -42,7 +42,10 @@ const TestimonialSection = () => {
   });
 
   return (
-    <section id="testimonials" className="max-w-7xl mx-auto min-h-80 px-6 sm:px-12 py-25 text-center mt-10">
+    <section
+      id="testimonials"
+      className="scroll-mt-30 max-w-7xl mx-auto min-h-80 px-6 sm:px-12 py-25 text-center mt-10"
+    >
       {/* Badge */}
       <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit mx-auto">
         <span className="w-2 h-2 bg-fuchsia-600 rounded-full animate-pulse"></span>

@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="max-w-7xl mx-auto min-h-screen flex items-center justify-between px-12 mt-50 gap-20"
+      className="max-w-7xl mx-auto min-h-screen flex items-center justify-between px-12 mt-30 gap-20"
     >
       <div className="flex flex-col max-w-2xl space-y-8">
         <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit">

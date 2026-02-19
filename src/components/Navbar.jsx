@@ -25,12 +25,12 @@ const Navbar = () => {
     <>
       <nav
         className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+          scrolled ? "bg-white shadow-md py-3" : "bg-transparent py-10"
         }`}
       >
-        <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
+        <div className="max-w-7xl mx-auto flex items-center justify-between px-6 pt-3">
           {/* Logo */}
-          <img src={logo} alt="klass koncepts logo" className="w-14" />
+          <img src={logo} alt="klass koncepts logo" className="w-16" />
 
           {/* Desktop Links */}
           <div className="space-x-8 hidden md:flex">

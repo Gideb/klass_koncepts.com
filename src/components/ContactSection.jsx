@@ -20,75 +20,93 @@ const ContactSection = () => {
               Work Together{" "}
             </span>
           </h2>
-          <br />
+
           <p className="text-gray-500 mt-2 max-w-2xl mx-auto">
             Ready to transform your digital presence? get in touch and let's
             create something amazing.
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-2 gap-25">
+          <div className="grid grid-cols-2 gap-35 py-8 ">
             <div className="text-left mt-10">
-              <h3 className="font-semibold ">Get In Touch</h3>
-              <p className="my-3">
+              <h3 className="font-semibold text-xl">Get In Touch</h3>
+              <p className="my-5">
                 Whether you have a project in mind or just want to say hello,
                 we'd love to hear from you.
               </p>
 
-              <div className="bg-white p-2 rounded-xl shadow-xl cursor-pointer border border-gray-300 flex justify-center items-center gap-2">
-                <div className="text-white bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg mx-auto">
-                  {" "}
-                  <i className="fas fa-envelope text-2xl"></i>
-                </div>
-                <div className="flex flex-col gap-1 text-left">
-                  <p className="text-sm">Email</p>
-                  <h4 className="font-semibold text-black">
-                    hello@klasskoncepts.com
-                  </h4>
-                </div>
-              </div>
+              <div className="contact-cards space-y-6">
+                <div
+                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
+                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
+                >
+                  <div
+                    className="text-white bg-red-600 w-9 h-9 
+                    flex items-center justify-center rounded-lg"
+                  >
+                    <i className="fas fa-envelope text-xl"></i>
+                  </div>
 
-              <br />
-
-              <div className="bg-white p-4 rounded-xl shadow-lg cursor-pointer border-2 border-gray-300 flex justify-center items-center gap-2">
-                <div className="text-white bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg mx-auto">
-                  {" "}
-                  <i className="fas fa-phone text-2xl"></i>
+                  <div className="flex flex-col">
+                    <p className="text-sm text-gray-500">Email</p>
+                    <h4 className="font-semibold text-black">
+                      hello@klasskoncepts.com
+                    </h4>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-2 text-left">
-                  <p className="text-sm">Phone</p>
-                  <h4 className="font-semibold text-black pr-8">
-                    +233 55 264 9953
-                  </h4>
-                </div>
-              </div>
 
-              <br />
+                <div
+                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
+                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
+                >
+                  <div
+                    className="text-white bg-yellow-600 w-9 h-9 
+                    flex items-center justify-center rounded-lg"
+                  >
+                    <i className="fas fa-phone text-xl"></i>
+                  </div>
 
-              <div className="bg-white p-4 rounded-xl shadow-lg cursor-pointer border-2 border-gray-300 flex justify-center items-center gap-2">
-                <div className="text-white bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg mx-auto">
-                  {" "}
-                  <i className="fas fa-map text-2xl"></i>
+                  <div className="flex flex-col">
+                    <p className="text-sm text-gray-500">Phone</p>
+                    <h4 className="font-semibold text-black">
+                      +233 55 264 9953
+                    </h4>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-2 text-left">
-                  <p className="text-sm">Location</p>
-                  <h4 className="font-semibold text-black pr-8">
-                    Accra, Ghana
-                  </h4>
-                </div>
-              </div>
 
-              <br />
+                <div
+                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
+                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
+                >
+                  <div
+                    className="text-white bg-black w-9 h-9 
+                    flex items-center justify-center rounded-lg"
+                  >
+                    <i className="fas fa-location-dot text-xl"></i>
+                  </div>
 
-              <div className="bg-white p-4 rounded-xl shadow-lg cursor-pointer border-2 border-gray-300 flex justify-center items-center gap-2">
-                <div className="text-white bg-purple-600 w-10 h-10 flex items-center justify-center rounded-lg mx-auto">
-                  {" "}
-                  <i className="fas fa-chat text-2xl"></i>
+                  <div className="flex flex-col">
+                    <p className="text-sm text-gray-500">Location</p>
+                    <h4 className="font-semibold text-black">Accra, Ghana</h4>
+                  </div>
                 </div>
-                <div className="flex flex-col gap-2 text-left">
-                  <p className="text-sm">WhatsApp</p>
-                  <h4 className="font-semibold text-black pr-8">
-                    Chat on WhatsApp
-                  </h4>
+
+                <div
+                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
+                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
+                >
+                  <div
+                    className="text-white bg-green-600 w-9 h-9 
+                    flex items-center justify-center rounded-lg "
+                  >
+                    <i className="fab fa-whatsapp text-xl"></i>
+                  </div>
+
+                  <div className="flex flex-col">
+                    <p className="text-sm text-gray-500">WhatsApp</p>
+                    <h4 className="font-semibold text-black">
+                      Chat on WhatsApp
+                    </h4>
+                  </div>
                 </div>
               </div>
             </div>
@@ -97,7 +115,6 @@ const ContactSection = () => {
               <form className="flex flex-col text-left">
                 <div className="flex">
                   <div className="grid grid-cols-2 gap-5">
-
                     <div className="flex flex-col gap-2 ">
                       <label htmlFor="name">Name</label>
                       <input
@@ -115,12 +132,8 @@ const ContactSection = () => {
                         className="bg-white border border-purple-300 rounded-md p-5 "
                       />
                     </div>
-
                   </div>
-
                 </div>
-
-                <br />
 
                 <label htmlFor="service">Service Type</label>
                 <select
@@ -130,8 +143,6 @@ const ContactSection = () => {
                 >
                   <option value="">Select Service Type</option>
                 </select>
-
-                <br />
 
                 <label htmlFor="message">Message</label>
                 <textarea

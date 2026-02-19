@@ -5,7 +5,8 @@ const ContactSection = () => {
     <div id="contact">
       <section
         id="why-us"
-        className="px-6 sm:px-12 py-24 text-center bg-purple-50"
+        className="px-6 sm:px-12 py-24 text-center bg-linear-to-b from-purple-50 via-white to-white
+"
       >
         <div className="max-w-7xl mx-auto min-h-60">
           <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit mx-auto">
@@ -26,7 +27,7 @@ const ContactSection = () => {
             create something amazing.
           </p>
 
-          <div className="grid md:grid-cols-2 gap-16 py-8 ">
+          <div className="grid lg:grid-cols-2 gap-16 py-16">
             <div className="text-left mt-10">
               <h3 className="font-semibold text-xl">Get In Touch</h3>
               <p className="my-5">
@@ -35,7 +36,7 @@ const ContactSection = () => {
               </p>
 
               <div className="contact-cards space-y-6">
-                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="group bg-white/70 backdrop-blur-md p-6 rounded-2xl border border-purple-100 shadow-lg flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
                     className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
 w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
@@ -51,7 +52,7 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                   </div>
                 </div>
 
-                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="group bg-white/70 backdrop-blur-md p-6 rounded-2xl border border-purple-100 shadow-lg flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
                     className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
 w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
@@ -67,7 +68,7 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                   </div>
                 </div>
 
-                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="group bg-white/70 backdrop-blur-md p-6 rounded-2xl border border-purple-100 shadow-lg flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
                     className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
 w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
@@ -81,7 +82,7 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                   </div>
                 </div>
 
-                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                <div className="group bg-white/70 backdrop-blur-md p-6 rounded-2xl border border-purple-100 shadow-lg flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
                     className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
 w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
@@ -99,8 +100,11 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
               </div>
             </div>
 
-            <div className="mt-10 bg-white p-10 rounded-2xl shadow-2xl">
-              <form className="flex flex-col text-left">
+            <div
+              className="mt-10 bg-white/80 backdrop-blur-xl p-10 rounded-3xl 
+shadow-[0_20px_60px_rgba(124,58,237,0.15)] border border-purple-100"
+            >
+              <form className="flex flex-col text-left space-y-4">
                 <div className="flex">
                   <div className="grid grid-cols-2 gap-5">
                     <div className="flex flex-col gap-2 ">
@@ -108,7 +112,9 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                       <input
                         type="text"
                         placeholder="Your full name"
-                        className="bg-white border border-purple-300 rounded-md p-5 w-full"
+                        className=" bg-white border border-purple-200 rounded-xl px-4 py-3
+focus:outline-none focus:ring-2 focus:ring-purple-500/40 
+focus:border-purple-500 transition"
                       />
                     </div>
 
@@ -117,7 +123,9 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                       <input
                         type="email"
                         placeholder="Your@email"
-                        className="bg-white border border-purple-300 rounded-md p-5 "
+                        className="bg-white border border-purple-200 rounded-xl px-4 py-3
+focus:outline-none focus:ring-2 focus:ring-purple-500/40 
+focus:border-purple-500 transition"
                       />
                     </div>
                   </div>
@@ -127,7 +135,9 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                 <select
                   name="service"
                   id="service"
-                  className="border border-purple-300 rounded-md p-5"
+                  className="bg-white border border-purple-200 rounded-xl px-4 py-3
+focus:outline-none focus:ring-2 focus:ring-purple-500/40 
+focus:border-purple-500 transition"
                 >
                   <option value="">Select Service Type</option>
                 </select>
@@ -138,14 +148,20 @@ w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scal
                   id="message"
                   placeholder="Tell us about your project"
                   rows={4}
-                  className="bg-white border border-purple-300 rounded-md p-5"
+                  className="bg-white border border-purple-200 rounded-xl px-4 py-3
+focus:outline-none focus:ring-2 focus:ring-purple-500/40 
+focus:border-purple-500 transition"
                 ></textarea>
 
                 <button
                   type="submit"
-                  className="p-4 bg-linear-to-br from-purple-700 to-fuchsia-700 text-white rounded-xl mt-2"
+                  className="mt-6 py-4 rounded-xl font-medium text-white 
+  bg-linear-to-r from-purple-700 to-fuchsia-600
+  shadow-lg shadow-purple-500/30
+  hover:shadow-xl hover:scale-[1.02]
+  transition duration-300"
                 >
-                  Send Message
+                  Send Message →
                 </button>
               </form>
             </div>

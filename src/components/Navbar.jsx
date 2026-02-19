@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* Desktop Button */}
           <a
             href="#contact"
-            className="hidden md:inline-block bg-gradient-to-r from-purple-700 to-purple-500 
+            className="hidden md:inline-block bg-linear-to-r from-purple-700 to-purple-500 
             text-white px-6 py-2.5 rounded-full font-medium shadow-lg 
             hover:opacity-90 transition"
           >

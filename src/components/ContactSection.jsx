@@ -26,7 +26,7 @@ const ContactSection = () => {
             create something amazing.
           </p>
 
-          <div className="grid grid-cols-2 gap-35 py-8 ">
+          <div className="grid md:grid-cols-2 gap-16 py-8 ">
             <div className="text-left mt-10">
               <h3 className="font-semibold text-xl">Get In Touch</h3>
               <p className="my-5">
@@ -35,13 +35,10 @@ const ContactSection = () => {
               </p>
 
               <div className="contact-cards space-y-6">
-                <div
-                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
-                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
-                >
+                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
-                    className="text-white bg-red-600 w-9 h-9 
-                    flex items-center justify-center rounded-lg"
+                    className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
+w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
                   >
                     <i className="fas fa-envelope text-xl"></i>
                   </div>
@@ -54,13 +51,10 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div
-                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
-                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
-                >
+                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
-                    className="text-white bg-yellow-600 w-9 h-9 
-                    flex items-center justify-center rounded-lg"
+                    className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
+w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
                   >
                     <i className="fas fa-phone text-xl"></i>
                   </div>
@@ -73,13 +67,10 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div
-                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
-                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
-                >
+                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
-                    className="text-white bg-black w-9 h-9 
-                    flex items-center justify-center rounded-lg"
+                    className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
+w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
                   >
                     <i className="fas fa-location-dot text-xl"></i>
                   </div>
@@ -90,13 +81,10 @@ const ContactSection = () => {
                   </div>
                 </div>
 
-                <div
-                  className="bg-white p-4 rounded-xl shadow-xl border border-gray-100 
-                  flex items-center gap-4 pl-10 border-x-4 border-x-purple-600"
-                >
+                <div className="group bg-white/70 backdrop-blur-md p-5 rounded-2xl border border-purple-100 shadow-md flex items-center gap-5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
                   <div
-                    className="text-white bg-green-600 w-9 h-9 
-                    flex items-center justify-center rounded-lg "
+                    className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 
+w-10 h-10 flex items-center justify-center rounded-xl shadow-md group-hover:scale-110 transition"
                   >
                     <i className="fab fa-whatsapp text-xl"></i>
                   </div>

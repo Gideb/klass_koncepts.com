@@ -2,7 +2,7 @@ import hero from "../assets/images/hero.png";
 
 const HeroSection = () => {
   return (
-    <section className="max-w-7xl mx-auto min-h-screen flex items-center justify-between px-12 mt-24 gap-20">
+    <section id="home" className="max-w-7xl mx-auto min-h-screen flex items-center justify-between px-12 mt-50 gap-20">
      
       <div className="flex flex-col max-w-2xl space-y-8">
         

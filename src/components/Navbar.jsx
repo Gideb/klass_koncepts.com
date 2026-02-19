@@ -16,10 +16,10 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-white shadow-md py-3" : "bg-transparent py-5"
+        scrolled ? "bg-white shadow-md py-2" : "bg-transparent py-5"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 mt-10">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-6 mt-7">
         {/* Logo */}
         <img src={logo} alt="klass koncepts logo" className="w-15" />
 

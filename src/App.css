@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@theme {
+    --animate-jiggle: jiggle 0.3s ease-in-out infinite;
+
+    @keyframes jiggle {
+
+        0%,
+        100% {
+            transform: rotate(-3deg);
+        }
+
+        50% {
+            transform: rotate(3deg);
+        }
+    }
 }

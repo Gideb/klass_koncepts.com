@@ -10,25 +10,26 @@ html {
 }
 
 
-@theme {
-        --animate-jiggle: jiggle 0.4s ease-in-out infinite;
 
-        @keyframes jiggle {
+.animate-jiggle {
+    animation: jiggle 0.4s ease-in-out infinite;
+}
 
-            0%,
-            100% {
-                transform: rotate(0deg);
-            }
+@keyframes jiggle {
 
-            25% {
-                transform: rotate(2deg);
-            }
-
-            75% {
-                transform: rotate(-2deg);
-            }
-        }
+    0%,
+    100% {
+        transform: rotate(0deg);
     }
+
+    25% {
+        transform: rotate(2deg);
+    }
+
+    75% {
+        transform: rotate(-2deg);
+    }
+}
 
 
 

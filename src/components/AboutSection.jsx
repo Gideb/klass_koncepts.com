@@ -53,7 +53,7 @@ const AboutSection = () => {
       <section className="max-w-7xl mx-auto px-6 sm:px-12 py-24">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* LEFT – Profile Card */}
-          <div className="bg-gray-100 rounded-3xl p-10 shadow border border-gray-300 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2">
+          <div className="bg-gray-100 rounded-3xl p-10 shadow border border-gray-300 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-2 order-2 lg:order-1">
             <div className="relative w-36 h-40 mx-auto mb-6 rounded-2xl bg-linear-to-br from-purple-600 to-fuchsia-600 flex items-center justify-center overflow-hidden group">
               <img
                 src={profile}
@@ -105,7 +105,7 @@ const AboutSection = () => {
           </div>
 
           {/* RIGHT – Text Content */}
-          <div>
+          <div className="order-1 lg:order-2">
             <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium">
               <span className="w-2 h-2 bg-fuchsia-600 rounded-full animate-pulse"></span>
               About Us
@@ -207,8 +207,6 @@ const AboutSection = () => {
               );
             })}
           </div>
-
-         
         </div>
       </section>
     </div>

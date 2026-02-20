@@ -58,6 +58,8 @@ html {
     }
 }
 
+/* laptop float rotate on herosection */
+
 
 @keyframes floatRotate {
     0% {
@@ -82,26 +84,44 @@ html {
 }
 
 
-@keyframes blob {
+/* fluid rotating blob on hero section */
 
-    0%,
+@keyframes fluidBlob {
+    0% {
+        transform: rotate(0deg) scale(1) translate(0px, 0px);
+        filter: hue-rotate(0deg) blur(8px);
+    }
+
+    25% {
+        transform: rotate(90deg) scale(1.1) translate(10px, -10px);
+        filter: hue-rotate(90deg) blur(6px);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.95) translate(-10px, 15px);
+        filter: hue-rotate(180deg) blur(10px);
+    }
+
+    75% {
+        transform: rotate(270deg) scale(1.05) translate(15px, 5px);
+        filter: hue-rotate(270deg) blur(7px);
+    }
+
     100% {
-        transform: translate(0px, 0px) scale(1);
-    }
-
-    33% {
-        transform: translate(30px, -50px) scale(1.1);
-    }
-
-    66% {
-        transform: translate(-20px, 20px) scale(0.9);
+        transform: rotate(360deg) scale(1) translate(0px, 0px);
+        filter: hue-rotate(360deg) blur(8px);
     }
 }
 
-.animate-blob {
-    animation: blob 8s infinite;
+.animate-fluid {
+    animation: fluidBlob 20s infinite ease-in-out;
 }
 
-.animation-delay-2000 {
-    animation-delay: 2s;
+
+.animate-fluid-slow {
+    animation: fluidBlob 25s infinite ease-in-out;
+}
+
+.animate-fluid-fast {
+    animation: fluidBlob 15s infinite ease-in-out;
 }

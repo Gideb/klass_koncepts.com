@@ -52,7 +52,7 @@ const Navbar = () => {
           {/* Desktop Button */}
           <a
             href="#contact"
-            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 lg:block md:hidden "
+            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 hidden md:inline-block"
           >
             Get a Quote
           </a>

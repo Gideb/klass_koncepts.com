@@ -194,7 +194,7 @@ const ServicesSection = () => {
             <span className="flex-1 h-px bg-linear-to-r from-purple-600 to-transparent ml-4"></span>
           </div>
 
-          <div className="w-1/3">
+          <div className="lg:w-1/3 sm:w-full">
             {services.security.map((service, index) => (
               <ServiceCard key={index} {...service} />
             ))}

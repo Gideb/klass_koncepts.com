@@ -1,6 +1,5 @@
 import hero from "../assets/images/hero.png";
-import bgVideo from "../assets/videos/video-5.mp4";
-import poster from '../assets/images/poster.jpg'
+import blob from "../assets/images/blob.svg";
 
 const HeroSection = () => {
   return (
@@ -8,18 +7,32 @@ const HeroSection = () => {
       id="home"
       className="scroll-mt-24 min-h-screen relative w-full overflow-hidden"
     >
-      <video
-        autoPlay
-        loop
-        playsInline
-        muted
-        poster={poster}
-        className="w-full h-full object-cover absolute top-0 left-0 -z-2"
-      >
-        <source src={bgVideo} type="video/mp4" />
-      </video>
+      <img
+        src={blob}
+        alt="fluid floating blob"
+        className="absolute top-2 -z-10 animate-fluid blur-md opacity-40"
+      />
+
+      <img
+        src={blob}
+        alt="fluid floating blob"
+        className="w-2xl absolute bottom-10 right-20 -z-10 animate-fluid-slow blur-sm opacity-60"
+      />
+
+      <img
+        src={blob}
+        alt="fluid floating blob"
+        className="absolute bottom-5 right-[30%] -z-10 animate-fluid-fast blur-lg opacity-20"
+      />
+
+      <img
+        src={blob}
+        alt="fluid floating blob"
+        className="absolute top-20 left-[10%] -z-10 animate-fluid-slow blur-xs opacity-30 w-32"
+      />
+
       <div className="px-8 max-w-7xl mx-auto flex items-center justify-between mt-40 gap-10 z-1">
-        <div className="flex flex-col max-w-2xl space-y-6">
+        <div className="flex flex-col max-w-2xl space-y-20">
           <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium w-fit">
             <span className="w-2 h-2 bg-purple-600 rounded-full animate-pulse"></span>
             Digital Agency & Portfolio
@@ -56,7 +69,7 @@ const HeroSection = () => {
           </div>
 
           {/* Stats */}
-         {/*  <div className="flex gap-16 pt-10">
+          {/*  <div className="flex gap-16 pt-10">
             <div>
               <h5 className="text-2xl font-bold bg-clip-text text-transparent bg-linear-to-br from-amber-600 to-fuchsia-600">
                 50+

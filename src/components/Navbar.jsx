@@ -52,9 +52,7 @@ const Navbar = () => {
           {/* Desktop Button */}
           <a
             href="#contact"
-            className="hidden md:inline-block bg-linear-to-r from-purple-700 to-purple-500 
-            text-white px-6 py-2.5 rounded-full font-medium shadow-lg 
-            hover:opacity-90 transition"
+            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
           >
             Get a Quote
           </a>
@@ -112,8 +110,7 @@ const Navbar = () => {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="mt-auto bg-linear-to-r from-purple-700 to-purple-500 
-            text-white text-center py-3 rounded-full font-medium shadow-lg"
+            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
           >
             Get a Quote
           </a>

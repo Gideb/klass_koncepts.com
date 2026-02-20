@@ -58,6 +58,59 @@ html {
     }
 }
 
+
+
+
+@keyframes floatSlow {
+
+    0%,
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    50% {
+        transform: translate(40px, -60px) scale(1.08);
+    }
+}
+
+@keyframes floatMedium {
+
+    0%,
+    100% {
+        transform: translate(0px, 0px) scale(1);
+    }
+
+    50% {
+        transform: translate(-30px, 40px) scale(0.95);
+    }
+}
+
+@keyframes rotateSlow {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-float-slow {
+    animation: floatSlow 14s ease-in-out infinite;
+}
+
+.animate-float-medium {
+    animation: floatMedium 18s ease-in-out infinite;
+}
+
+.animate-rotate-slow {
+    animation: rotateSlow 40s linear infinite;
+}
+
+
+
+
+
 /* laptop float rotate on herosection */
 
 
@@ -124,4 +177,99 @@ html {
 
 .animate-fluid-fast {
     animation: fluidBlob 15s infinite ease-in-out;
+}
+
+
+/*  herosection CSS  */
+
+@keyframes fluidRotate {
+    0% {
+        transform: rotate(0deg) scale(1) translate(0px, 0px);
+        filter: hue-rotate(0deg) blur(8px);
+    }
+
+    25% {
+        transform: rotate(90deg) scale(1.1) translate(20px, -15px);
+        filter: hue-rotate(90deg) blur(6px);
+    }
+
+    50% {
+        transform: rotate(180deg) scale(0.95) translate(-15px, 20px);
+        filter: hue-rotate(180deg) blur(10px);
+    }
+
+    75% {
+        transform: rotate(270deg) scale(1.05) translate(15px, -10px);
+        filter: hue-rotate(270deg) blur(7px);
+    }
+
+    100% {
+        transform: rotate(360deg) scale(1) translate(0px, 0px);
+        filter: hue-rotate(360deg) blur(8px);
+    }
+}
+
+@keyframes floatRotate {
+
+    0%,
+    100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    33% {
+        transform: translateY(-15px) rotate(1deg);
+    }
+
+    66% {
+        transform: translateY(10px) rotate(-1deg);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fluid {
+    animation: fluidRotate 20s infinite ease-in-out;
+}
+
+.animate-fluid-slow {
+    animation: fluidRotate 25s infinite ease-in-out;
+}
+
+.animate-fluid-fast {
+    animation: fluidRotate 15s infinite ease-in-out;
+}
+
+.animate-scroll {
+    animation: scroll 2s infinite;
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-out;
 }

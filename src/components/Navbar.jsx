@@ -52,14 +52,14 @@ const Navbar = () => {
           {/* Desktop Button */}
           <a
             href="#contact"
-            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-6 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 lg:block md:hidden "
           >
             Get a Quote
           </a>
 
           {/* Mobile Hamburger */}
           <button
-            className="md:hidden flex flex-col gap-1.5"
+            className="md:hidden flex flex-col gap-1.5 cursor-pointer"
             onClick={() => setMenuOpen(true)}
           >
             <span className="w-6 h-0.5 bg-gray-800"></span>
@@ -79,14 +79,14 @@ const Navbar = () => {
 
       {/* Sidebar */}
       <div
-        className={`fixed top-0 right-0 h-full w-72 bg-white z-50 shadow-2xl 
+        className={`fixed top-0 right-0 h-full w-70 bg-white z-50 shadow-2xl 
         transform transition-transform duration-400 ease-out
         ${menuOpen ? "translate-x-0" : "translate-x-full"}`}
       >
-        <div className="p-6 flex flex-col h-full">
+        <div className="p-6 flex flex-col h-full ">
           {/* Close Button */}
           <button
-            className="self-end text-2xl"
+            className="self-end text-2xl cursor-pointer"
             onClick={() => setMenuOpen(false)}
           >
             ×
@@ -110,7 +110,7 @@ const Navbar = () => {
           <a
             href="#contact"
             onClick={() => setMenuOpen(false)}
-            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2"
+            className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 absolute bottom-20"
           >
             Get a Quote
           </a>

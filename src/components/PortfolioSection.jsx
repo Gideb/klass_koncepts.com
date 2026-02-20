@@ -9,8 +9,7 @@ const PortfolioSection = () => {
       id: 1,
       title: "TechCorp Website Redesign",
       category: "Web Development",
-      description:
-        "Modern corporate website with CMS integration and SEO optimization.",
+      description: "Modern corporate website with CMS integration and SEO optimization.",
       image: placeholder,
       tags: ["React", "Node.js", "Tailwind"],
       liveLink: "https://example.com",
@@ -109,8 +108,7 @@ const PortfolioSection = () => {
       >
         {/* Rolling Fuchsia Overlay - Your creative effect */}
         <div
-          className={`absolute inset-0 bg-gradient-to-br from-purple-600/10 to-fuchsia-500/10 transition-transform duration-700 ease-out z-10 ${
-            isHovered ? "translate-y-0" : "-translate-y-full"
+          className={`absolute inset-0 bg-linear-to-br from-purple-600/10 to-fuchsia-500/10 transition-transform duration-700 ease-out z-10 ${isHovered ? "translate-y-0" : "-translate-y-full"
           }`}
         ></div>
 
@@ -129,7 +127,7 @@ const PortfolioSection = () => {
             </span>
           </div>
 
-          {/* Featured Badge - Optional */}
+          {/* Featured Badge -  */}
           {item.featured && (
             <div className="absolute top-4 right-4 z-20">
               <span className="inline-flex items-center bg-amber-500 text-white px-3 py-1 rounded-full text-xs font-medium shadow-lg">

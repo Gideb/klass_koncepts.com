@@ -1,7 +1,15 @@
 import React from "react";
 
 const FooterSection = () => {
-  const navLinks = ["Home", "Services", "Portfolio", "About", "Why-Us", "Contact", "Testimonials"];
+  const navLinks = [
+    "Home",
+    "Services",
+    "Portfolio",
+    "About",
+    "Why-Us",
+    "Contact",
+    "Testimonials",
+  ];
 
   return (
     <div>
@@ -25,35 +33,36 @@ const FooterSection = () => {
               </p>
               <div className="space-x-2">
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/1gideb"
                   className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
 "
                 >
                   <i className="fab fa-twitter hover:scale-110 transition duration-300"></i>
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://instagram.com/1gideb"
                   className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
 "
                 >
                   <i className="fab fa-instagram hover:scale-110 transition duration-300"></i>
                 </a>
                 <a
-                  href="https://github.com"
+                  href="https://www.linkedin.com/in/gilbert-debrah-836aa61a3/"
+                  className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
+"
+                >
+                  <i className="fab fa-linkedin hover:scale-110 transition duration-300"></i>
+                </a>
+                <a
+                  href="https://github.com/Gideb"
                   className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
 "
                 >
                   <i className="fab fa-github hover:scale-110 transition duration-300"></i>
                 </a>
+
                 <a
-                  href="https://facebook.com"
-                  className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
-"
-                >
-                  <i className="fab fa-facebook hover:scale-110 transition duration-300"></i>
-                </a>
-                <a
-                  href="https://youtube.com"
+                  href="https://youtube.com/gidebdesigns"
                   className="p-2 bg-white/10 rounded-xl hover:bg-purple-600 transition-all duration-300 hover:scale-110 hover:shadow-lg hover:shadow-purple-600/30
 "
                 >
@@ -134,9 +143,9 @@ const FooterSection = () => {
             </div>
           </div>
 
-          <hr className="border-white/10 my-6" />
+          <hr className="border-white/30 my-6" />
 
-          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white/60 text-sm pb-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-white/60 text-sm pb-10">
             <p>
               &copy; {new Date().getFullYear()}
               Klass Koncepts. All rights reserved.

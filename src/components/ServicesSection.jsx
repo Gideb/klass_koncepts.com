@@ -127,7 +127,7 @@ const ServicesSection = () => {
 
   // eslint-disable-next-line no-unused-vars
   const WhyUsCard = ({ icon: Icon, title, desc }) => (
-    <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-xl cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3">
+    <div className="bg-white px-8 py-10 rounded-xl shadow hover:shadow-xl cursor-pointer border-2 border-gray-200 border-t-5 border-t-amber-600 transform transition duration-300 ease-in-out hover:-translate-y-3 hover:border-t-3">
       <div className="text-white bg-linear-to-br from-purple-600 to-fuchsia-600 w-16 h-16 flex items-center justify-center rounded-lg mb-4 mx-auto shadow-lg">
         <Icon className="text-3xl" aria-hidden="true" />
       </div>

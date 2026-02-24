@@ -14,9 +14,8 @@ import {
   FaBolt,
   FaMobile,
 } from "react-icons/fa";
-import ContactSection from "./ContactSection";
 
-const ServicesSection = () => {
+const AllServices = () => {
   const services = {
     digital: [
       {
@@ -200,8 +199,6 @@ const ServicesSection = () => {
             ))}
           </div>
         </div>
-
-       
       </section>
 
       {/* Why Us Section */}
@@ -258,4 +255,4 @@ const ServicesSection = () => {
   );
 };
 
-export default ServicesSection;
+export default AllServices;

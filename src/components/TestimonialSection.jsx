@@ -9,31 +9,31 @@ const TestimonialSection = () => {
   const testimonials = [
     {
       id: 1,
-      name: "1Kwame Busra",
-      company: "Codein",
-      location: "Mars",
-      text: "Choosing to pursue my degree at Codein was one of the best decisions I ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
+      name: "Founder",
+      company: "FinTech Startup",
+      location: "Sunyani, Ghana",
+      text: "Klass Koncepts didn’t just redesign our platform — they restructured our entire digital strategy. Within 90 days, we saw measurable growth across every key metric.",
       rating: 5,
     },
     {
       id: 2,
-      name: "2Sarah Mensah",
+      name: "Sarah Mensah",
       company: "TechStart",
       location: "Accra, Ghana",
       text: "Klass Koncepts transformed our online presence completely. Their attention to detail and technical expertise is unmatched. The website they built for us has increased our conversions by 200%.",
-      rating: 4,
-    },
-    {
-      id: 3,
-      name: "3John Doe",
-      company: "Global Media",
-      location: "Lagos, Nigeria",
-      text: "Working with Gilbert was a pleasure. He understood our vision perfectly and delivered beyond expectations. The project was completed on time and within budget.",
       rating: 5,
     },
     {
+      id: 3,
+      name: "John Doe",
+      company: "Global Media",
+      location: "Lagos, Nigeria",
+      text: "Working with Gilbert was a pleasure. He understood our vision perfectly and delivered beyond expectations. The project was completed on time and within budget.",
+      rating: 4,
+    },
+    {
       id: 4,
-      name: "4Amara Okafor",
+      name: "Amara Okafor",
       company: "Creative Hub",
       location: "Nairobi, Kenya",
       text: "The team's creative direction and technical implementation are top-notch. They don't just build websites; they create digital experiences that resonate with users.",
@@ -41,7 +41,7 @@ const TestimonialSection = () => {
     },
     {
       id: 5,
-      name: "5John Doe",
+      name: "John Doe",
       company: "Global Media",
       location: "Lagos, Nigeria",
       text: "Working with Gilbert was a pleasure. He understood our vision perfectly and delivered beyond expectations. The project was completed on time and within budget.",
@@ -49,7 +49,7 @@ const TestimonialSection = () => {
     },
     {
       id: 6,
-      name: "6Amara Okafor",
+      name: "Amara Okafor",
       company: "Creative Hub",
       location: "Nairobi, Kenya",
       text: "The team's creative direction and technical implementation are top-notch. They don't just build websites; they create digital experiences that resonate with users.",
@@ -100,7 +100,7 @@ const TestimonialSection = () => {
   return (
     <section
       id="testimonials"
-      className="scroll-mt-24 max-w-7xl mx-auto min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24 text-center bg-linear-to-b from-white to-purple-50/30"
+      className="scroll-mt-24 max-w-7xl mx-auto min-h-screen px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-20 text-center bg-linear-to-b from-white to-purple-50/30"
     >
       {/* Badge */}
       <div className="inline-flex items-center gap-2 bg-purple-100 text-purple-600 px-4 py-2 rounded-full text-sm font-medium mx-auto animate-fadeIn">

@@ -3,7 +3,7 @@ import placeholder from "../assets/images/hero.png";
 import { FaGithub, FaExternalLinkAlt, FaArrowRight } from "react-icons/fa";
 
 const PortfolioSection = () => {
-  // Portfolio data array - easy to update and maintain
+
   const portfolioItems = [
     {
       id: 1,

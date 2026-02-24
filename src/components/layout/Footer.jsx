@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaTwitter,
   FaInstagram,
@@ -10,14 +11,12 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-const FooterSection = () => {
+const Footer = () => {
   const navLinks = [
     { name: "Home", path: "home" },
     { name: "Services", path: "services" },
     { name: "Portfolio", path: "portfolio" },
     { name: "About", path: "about" },
-    { name: "Why Us", path: "why-us" },
-    { name: "Testimonials", path: "testimonials" },
     { name: "Contact", path: "contact" },
   ];
 
@@ -97,13 +96,13 @@ const FooterSection = () => {
               </h3>
               <div className="space-y-2 flex flex-col">
                 {navLinks.map((item) => (
-                  <a
+                  <Link
                     key={item.name}
-                    href={`#${item.path}`}
-                    className="text-sm text-gray-400 hover:text-purple-500 hover:translate-x-1 transition-all duration-300 inline-block"
+                    to={item.path === "home" ? "/" : `/${item.path}`}
+                    className="hover:text-purple-500 transition-colors"
                   >
                     {item.name}
-                  </a>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -202,26 +201,26 @@ const FooterSection = () => {
 
             {/* Legal Links */}
             <div className="flex gap-4 text-xs">
-              <a
-                href="#privacy"
+              <Link
+                to="/cookies"
                 className="hover:text-purple-500 transition-colors"
               >
                 Cookies{" "}
-              </a>
+              </Link>
               <span>•</span>
-              <a
-                href="#privacy"
+              <Link
+                to="/privacy"
                 className="hover:text-purple-500 transition-colors"
               >
                 Privacy Policy
-              </a>
+              </Link>
               <span>•</span>
-              <a
-                href="#terms"
+              <Link
+                to="/terms"
                 className="hover:text-purple-500 transition-colors"
               >
                 Terms of Use
-              </a>
+              </Link>
             </div>
 
             <p className="flex items-center gap-1">
@@ -237,4 +236,4 @@ const FooterSection = () => {
   );
 };
 
-export default FooterSection;
+export default Footer;

@@ -1,6 +1,7 @@
-import logo from "../assets/images/logo.png";
+import logo from "../../assets/images/logo.png";
 import { useEffect, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -36,29 +37,29 @@ const Navbar = () => {
           {/* Desktop Links */}
           <div className="space-x-8 hidden md:flex">
             {navLinks.map((item) => (
-              <a
+              <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 className="relative font-medium text-gray-700 hover:text-purple-600
-                  after:content-[''] after:absolute after:left-0 after:-bottom-1
-                  after:h-0.5 after:w-0 after:bg-purple-500
-                  after:transition-all after:duration-300
-                  hover:after:w-full"
+        after:content-[''] after:absolute after:left-0 after:-bottom-1
+        after:h-0.5 after:w-0 after:bg-purple-500
+        after:transition-all after:duration-300
+        hover:after:w-full"
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Desktop Button */}
 
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             className="w-full sm:w-auto group bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-9 py-3 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 invisible md:visible flex items-center justify-center gap-2"
           >
             Get a Quote
             <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
 
           {/* Mobile Hamburger */}
           <button
@@ -98,26 +99,26 @@ const Navbar = () => {
           {/* Links */}
           <div className="mt-10 flex flex-col gap-6 text-lg">
             {navLinks.map((item) => (
-              <a
+              <Link
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                to={item === "Home" ? "/" : `/${item.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
                 className="font-medium text-gray-700 hover:text-purple-600 transition"
               >
                 {item}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* CTA */}
-          <a
-            href="#contact"
+          <Link
+            to="/contact"
             onClick={() => setMenuOpen(false)}
             className="bg-linear-to-r from-purple-600 to-fuchsia-600 text-white px-8 py-4 rounded-full font-semibold text-lg hover:shadow-lg transform transition duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 absolute bottom-20 flex items-center justify-center gap-2"
           >
             Get a Quote
             <FaArrowRight className="text-sm group-hover:translate-x-1 transition-transform" />
-          </a>
+          </Link>
         </div>
       </div>
     </>
